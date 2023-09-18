@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quản lý sinh viên</h1>
+
+      <form action="" id="form">
+        <div class="form-control">
+          <input type="text" id="name" placeholder="Họ và tên" />
+          <span></span>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input type="text" id="email" placeholder="Email" />
+          <span></span>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input type="text" id="phone" placeholder="Số điện thoại" />
+          <span></span>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input type="text" id="address" placeholder="Địa chỉ" />
+          <span></span>
+          <small></small>
+        </div>
+
+        <div class="form-control" style="display: flex; border-bottom: none">
+          <label for="male">Nam</label>
+          <input type="radio" id="male" name="gender" value="Nam" />
+          <label for="female">Nữ</label>
+          <input type="radio" id="female" name="gender" value="Nữ" />
+        </div>
+
+        <input type="submit" value="Hoàn thành" />
+      </form>
+
+      <table border="1" width="800">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Giới tính</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="student-list"></tbody>
+      </table>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
