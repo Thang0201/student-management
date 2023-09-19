@@ -114,23 +114,44 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
-th,
-td {
+table th,
+table td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-
-tr:nth-child(even) {
+table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
-tr:nth-child(odd) {
+table tr:nth-child(odd) {
   background-color: #2fffba;
 }
-
-th {
+table th {
   background-color: #afad4c;
   color: white;
+}
+
+#pagination-lists {
+  margin-top: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+#pagination-lists li {
+  width: 50px;
+  height: 50px;
+  background-color: #c51c1c;
+  color: white;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
